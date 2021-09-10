@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.036
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.15157557, g: 0.15234214, b: 0.14749622, a: 0.036}
+  m_IndirectSpecularColor: {r: 0.15156874, g: 0.15234858, b: 0.14751181, a: 0.036}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -762,7 +762,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'George P. Burdell <-- Not your name, change it!
+  m_Text: 'David Cornell
 
 '
 --- !u!222 &78144232
@@ -8456,9 +8456,11 @@ MonoBehaviour:
   buttonCloseEnoughForPressAngleDegrees: 5
   initalMatchTargetsAnimTime: 0
   exitMatchTargetsAnimTime: 0
+  animationSpeed: 1
+  rootMovementSpeed: 1
+  rootTurnSpeed: 1
   jumpableGroundNormalMaxAngle: 45
   closeToJumpableGround: 0
-  buttonObject: {fileID: 0}
 --- !u!114 &966225177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11112,9 +11114,11 @@ MonoBehaviour:
   buttonCloseEnoughForPressAngleDegrees: 5
   initalMatchTargetsAnimTime: 0
   exitMatchTargetsAnimTime: 0
+  animationSpeed: 1
+  rootMovementSpeed: 1
+  rootTurnSpeed: 1
   jumpableGroundNormalMaxAngle: 45
   closeToJumpableGround: 1
-  buttonObject: {fileID: 1810421759}
 --- !u!136 &1331787735
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -16945,12 +16949,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57e6787794c864677921523e8f571933, type: 3}
---- !u!1 &1810421759 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8717648844397121767, guid: cad54794e0416478ebf40bab225f861e,
-    type: 3}
-  m_PrefabInstance: {fileID: 599924519}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1827452580
 PrefabInstance:
   m_ObjectHideFlags: 0
