@@ -25,10 +25,6 @@ public class RootMotionControlScript : MonoBehaviour
     public float buttonCloseEnoughForPressAngleDegrees = 5f;
     public float initalMatchTargetsAnimTime = 0.25f;
     public float exitMatchTargetsAnimTime = 0.75f;
-    public float animationSpeed = 1f;
-    public float rootMovementSpeed = 1f;
-    public float rootTurnSpeed = 1f;
-
 
     // classic input system only polls in Update()
     // so must treat input events like discrete button presses as
@@ -45,6 +41,9 @@ public class RootMotionControlScript : MonoBehaviour
     public float jumpableGroundNormalMaxAngle = 45f;
     public bool closeToJumpableGround;
 
+    public float animationSpeed = 1f;
+    public float rootMovementSpeed = 1f;
+    public float rootTurnSpeed = 1f;
 
     private int groundContactCount = 0;
 
@@ -165,7 +164,7 @@ public class RootMotionControlScript : MonoBehaviour
 
 
 
-        anim.speed = animationSpeed;        // from instructions
+        anim.speed = animationSpeed;        // from instructions (though in video he does in Update, not FixedUpdate)
 
     }
 
@@ -219,7 +218,7 @@ public class RootMotionControlScript : MonoBehaviour
         newRootRotation = anim.rootRotation;
 
         //TODO Here, you could scale the difference in position and rotation to make the character go faster or slower
-        newRootPosition = Vector3.LerpUnclamped(this.transform.position, newRootPosition, rootMovementSpeed);       // should it be based on this.transform.position or something else?
+        newRootPosition = Vector3.LerpUnclamped(this.transform.position, newRootPosition, rootMovementSpeed);
         newRootRotation = Quaternion.LerpUnclamped(this.transform.rotation, newRootRotation, rootTurnSpeed);
 
         // old way
