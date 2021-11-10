@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637677811522356938
-    m_Hash: 1672056491
+      ticks: 637677591978698853
+    m_Hash: 2687676490
   m_LockFileStatus:
     m_FilePath: C:/a CS 4455/cs4455/M3/Cornell_D_m3/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637677811522356938
-    m_Hash: 1079802586
+      ticks: 637677591979468454
+    m_Hash: 1171065863
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -169,6 +169,10 @@ m_PackageAssets:
         - 1.9.0
         - 1.10.2
         - 1.11.2
+        - 1.12.5
+        - 1.13.5
+        - 1.14.1
+        - 1.15.1
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -185,6 +189,10 @@ m_PackageAssets:
         - 1.9.0
         - 1.10.2
         - 1.11.2
+        - 1.12.5
+        - 1.13.5
+        - 1.14.1
+        - 1.15.1
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -774,10 +782,12 @@ m_PackageAssets:
         - 1.1.26
         - 1.1.27
         - 1.1.29
+        - 1.1.30
         compatible:
         - 1.1.27
         - 1.1.29
-        verified: 1.1.29
+        - 1.1.30
+        verified: 1.1.30
       dependencies:
       - name: com.unity.ext.nunit
         version: 1.0.6
@@ -1054,12 +1064,14 @@ m_PackageAssets:
         - 1.5.4
         - 1.5.5
         - 1.5.6
+        - 1.5.7
         - 1.6.0-pre.1
         - 1.6.0-pre.3
         - 1.6.0-pre.4
         - 1.6.0-pre.5
         - 1.6.1
         - 1.6.2
+        - 1.6.3
         compatible:
         - 1.4.8
         - 1.5.0-pre.2
@@ -1075,12 +1087,14 @@ m_PackageAssets:
         - 1.5.4
         - 1.5.5
         - 1.5.6
+        - 1.5.7
         - 1.6.0-pre.1
         - 1.6.0-pre.3
         - 1.6.0-pre.4
         - 1.6.0-pre.5
         - 1.6.1
         - 1.6.2
+        - 1.6.3
         verified: 1.4.8
       dependencies:
       - name: com.unity.modules.director
@@ -3114,6 +3128,7 @@ m_PackageAssets:
         - 2.0.0-preview.2
         - 2.0.0
         - 2.0.1-preview.1
+        - 2.0.2
         compatible:
         - 1.0.0-preview.2
         - 1.0.0-preview.3
@@ -3125,7 +3140,8 @@ m_PackageAssets:
         - 2.0.0-preview.2
         - 2.0.0
         - 2.0.1-preview.1
-        verified: 2.0.0
+        - 2.0.2
+        verified: 2.0.2
       dependencies: []
       resolvedDependencies: []
       keywords: []
