@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Boss
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - Environment
+  - Player Projectile
+  - Enemy
+  - Enemy Projectile
+  - Boss
+  - Drop
+  - Sniper Projectile
+  - PostProcessing
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1127549183
+    locked: 0
+  - name: ProgressBG
+    uniqueID: 1654664685
+    locked: 0
+  - name: ProgressFG
+    uniqueID: 3053426243
+    locked: 0
+  - name: Foreground
+    uniqueID: 426385457
+    locked: 0

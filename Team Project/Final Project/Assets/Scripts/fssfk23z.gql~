@@ -1,0 +1,96 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class UIManager : MonoBehaviour
+{
+    public static UIManager instance;
+
+    public GameObject deathScreen;
+    public GameObject pauseScreen;
+    public GameObject[] sceneElements;
+
+    void Awake()
+    {
+        //singleton!
+        if (instance == null)
+            instance = this;
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        deathScreen.SetActive(false);
+        pauseScreen.SetActive(false);
+        for (int i = 0; i < sceneElements.Length; i++)
+        {
+            setActivation(sceneElements[i], true);
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void StartGame()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Ivan Test");
+    }
+
+    public void ShowDeathScreen()
+    {
+        toggleScene();
+        deathScreen.SetActive(true);
+    }
+
+    public void Respawn()
+    {
+        //hide menu
+        //invoke unity event (like in health script)
+    }
+
+    public void Home()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Start Screen");
+    }
+
+    public void Win()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Win Screen");
+    }
+
+    void OnPause()
+    {
+        toggleScene();
+        if (pauseScreen.activeSelf)
+        {
+            pauseScreen.SetActive(false);
+        }
+        else
+        {
+            pauseScreen.SetActive(true);
+        }
+    }
+
+    private void toggleScene()
+    {
+        for (int i = 0; i < sceneElements.Length; i++)
+        {
+            if (sceneElements[i].activeSelf)
+            {
+                setActivation(sceneElements[i], false);
+            }
+            else
+            {
+                setActivation(sceneElements[i], true);
+            }
+        }
+    }
+
+    private void setActivation(GameObject o, bool b)
+    {
+        o.SetActive(b);
+    }
+}
